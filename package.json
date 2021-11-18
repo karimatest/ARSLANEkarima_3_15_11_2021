@@ -1,0 +1,24 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "Mon projet openclassrooms 3 ohmyfood",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./main.scss:./style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karimatest/ohmyfood.git"
+  },
+  "author": "karima arslane",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/karimatest/ohmyfood/issues"
+  },
+  "homepage": "https://github.com/karimatest/ohmyfood#readme",
+  "dependencies": {
+    "-": "^0.0.1",
+    "g": "^2.0.1",
+    "sass": "^1.43.4"
+  }
+}
