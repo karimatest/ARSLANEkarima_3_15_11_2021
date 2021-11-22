@@ -1,0 +1,11 @@
+.localisation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3f3f3;
+    height: 80px;
+    gap: 15px;
+    & i{
+        font-size: 30px;
+    }
+}
