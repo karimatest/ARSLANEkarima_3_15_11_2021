@@ -1,0 +1,23 @@
+[33mcommit 5d54450bdd8f0beb8cd872d1e28c27f0d87941a4[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: karima arslane <kamime.93@hotmail.fr>
+Date:   Mon Nov 22 19:49:43 2021 +0100
+
+    partie fonctionnement
+
+[33mcommit 9de8d467cb05da8aab5efd3ce7180498a2b71a94[m
+Author: karima arslane <kamime.93@hotmail.fr>
+Date:   Thu Nov 18 21:21:22 2021 +0100
+
+    add sass script to package.json
+
+[33mcommit e0b99ae09d62e1039ec90fab8072d889ab62e436[m
+Author: karima arslane <kamime.93@hotmail.fr>
+Date:   Thu Nov 18 16:02:57 2021 +0100
+
+    npm init and add sass
+
+[33mcommit 3b02bc54457eacce7502ff8a15489230870fcacc[m
+Author: karima arslane <kamime.93@hotmail.fr>
+Date:   Fri Nov 12 11:17:18 2021 +0100
+
+    partie localisation et réservation

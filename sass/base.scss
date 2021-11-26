@@ -9,5 +9,15 @@ body{
     font-family: "Roboto", sans-serif;
 }
 main{
-    padding: 10px 12px;
+    padding: 10px 112px;
+    @media (max-width: 800px) {
+        padding: 0 1rem;
+    }
+}
+h3, p{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: inherit;
 }

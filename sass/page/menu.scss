@@ -1,0 +1,63 @@
+@import "../utils/mixins.scss";
+img{
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+    display: block;
+}
+.menu{
+    position: relative;
+    .menu-header{
+        display: flex;
+        align-items: center;    
+        position: relative;
+        margin-top: -5rem;
+        border-radius: 2rem 2rem 0 0;
+        height: 100px;
+        background-color: $lightgrey;
+        
+    
+    & h2{
+    font-family: "shrikhand",sans-serif;
+    padding: 10px 30px;
+    
+}
+    i{
+    font-size: 30px;
+    position: absolute;
+    right: 23px;
+    top: 33px;
+    padding: 5px;
+}
+   .fas{
+   color: transparent;
+   background-clip: text;
+   -webkit-background-clip: text;
+   opacity: 0;
+   transition: all 200ms;
+   @include mixinslinear-gradien;
+}
+    &:hover .fas{
+    opacity: 1;
+    transform: scale(1.2);
+}
+    } 
+    &-content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    background-color: $lightgrey;
+    @media (max-width:900px) {
+       grid-template-columns: 1fr;
+    }
+    }
+    &-group{
+        h3{
+            padding: 20px;
+        }
+      &_list{
+          border: 1px solid red;
+          background-color: white;
+      }
+    }
+}
