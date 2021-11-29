@@ -1,4 +1,6 @@
 @import "../utils/mixins.scss";
+@import "../utils/color.scss";
+@import "../utils/animation.scss";
 img{
     width: 100%;
     height: 60vh;
@@ -15,12 +17,9 @@ img{
         border-radius: 2rem 2rem 0 0;
         height: 100px;
         background-color: $lightgrey;
-        
-    
     & h2{
     font-family: "shrikhand",sans-serif;
     padding: 10px 30px;
-    
 }
     i{
     font-size: 30px;
@@ -46,18 +45,93 @@ img{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
+    padding: 1.5rem;
     background-color: $lightgrey;
     @media (max-width:900px) {
        grid-template-columns: 1fr;
     }
     }
     &-group{
+       overflow: hidden;
         h3{
-            padding: 20px;
+            padding: 10px;
+            margin-bottom: 1rem;
+            position: relative;
+            font-weight: 300;
+         &::after{
+             content: "";
+            position: absolute;
+            left: 10px;
+            bottom: 1px;;
+            width: 3rem;
+            height: 4px;
+            background-color: $tertiary;
+         }   
         }
-      &_list{
-          border: 1px solid red;
-          background-color: white;
-      }
-    }
+        .menu-group_list{
+         background-color: white;
+         border-radius: 1rem;
+         @include mixinsbox-shadow;
+         margin: 10px;
+         overflow: hidden;
+         .menu-group_card{
+            display: flex;
+            border-radius: 1rem;
+            .menu-group_description{
+             padding: 1rem;  
+             overflow: hidden;
+
+            h4{
+              margin: 0rem;
+              font-weight: 500;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
+            p{
+                font-weight: 300;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;  
+            }
+         }
+         .menu-group_prix{
+            margin-left: auto;
+            font-weight: 600;
+            padding: 1rem;
+            display: flex;
+            align-items: flex-end;
+         }
+         .menu-group_slide{
+           background-color: $tertiary;
+           border-radius: 0 1rem 1rem 0;
+           margin-right: -4rem;
+           width: 4rem;
+           transition: margin-right 0.5s;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           flex-shrink: 0;
+           i{
+            font-size: 25px;
+            color: white;   
+           }
+         }
+         &:hover{
+         .menu-group_slide{
+           margin-right: 0;  
+         }
+         i{
+         @include quartdetour;    
+        animation: 0.5s ease-in-out quartdetour;
+         }
+        }
+        
+        }
+        
+        }
+   
+}
+
+ 
 }

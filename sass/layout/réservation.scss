@@ -1,9 +1,11 @@
 @import "../utils/mixins.scss";
 @import "../utils/mixins.scss";
 @import "../utils/mixins.scss";
+@import "../utils/color.scss";
 .réservation {
     text-align: center;
     padding: 20px 30px;
+    background-color: $lightgrey;
     & p{
        padding: 20px;
     }
