@@ -2,21 +2,17 @@
 @import "../utils/color.scss";
 @import "../utils/animation.scss";
 
-
-
-    .header-boutton{
-        display: flex;
-        position: absolute;
-        left: 1.25rem;
-        top: 2rem;
-
-    }
-    .header-boutton i{
-        display: flex;
-        top: 50%;
-    }
-
-
+.header{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.header-menu{
+    position: absolute;
+    left: 35px;
+    font-size: 20px;
+    cursor: pointer;
+}
 
 img{
     width: 100%;

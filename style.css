@@ -18,7 +18,7 @@ a {
   color: inherit;
 }
 
-header h1 {
+h1 {
   font-family: "Shrikhand", cursive;
   text-align: center;
   align-items: center;
@@ -26,6 +26,7 @@ header h1 {
   box-shadow: 0px 5px 6px 0px #b8b6b6;
   padding: 16px;
   margin: 0px;
+  width: 100%;
 }
 
 .localisation {
@@ -233,16 +234,17 @@ footer ul li {
   }
 }
 
-.header-boutton {
+.header {
+  position: relative;
   display: flex;
-  position: absolute;
-  left: 1.25rem;
-  top: 2rem;
+  align-items: center;
 }
 
-.header-boutton i {
-  display: flex;
-  top: 50%;
+.header-menu {
+  position: absolute;
+  left: 35px;
+  font-size: 20px;
+  cursor: pointer;
 }
 
 img {
