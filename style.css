@@ -203,19 +203,46 @@ footer {
   color: white;
   padding: 15px;
 }
-
-.footer-logo {
+@media (min-width: 800px) {
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    gap: 10px;
+  }
+}
+footer .footer-logo {
   font-family: "shrikhand", sans-serif;
   padding: 20px 7px;
   margin: 0;
 }
-
-ul {
+footer ul {
   list-style: none;
   padding-left: 0rem;
 }
-ul li {
+footer ul li {
   padding: 6px;
+}
+@media (min-width: 800px) {
+  footer ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+.header-boutton {
+  display: flex;
+  position: absolute;
+  left: 1.25rem;
+  top: 2rem;
+}
+
+.header-boutton i {
+  display: flex;
+  top: 50%;
 }
 
 img {

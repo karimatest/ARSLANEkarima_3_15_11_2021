@@ -1,6 +1,23 @@
 @import "../utils/mixins.scss";
 @import "../utils/color.scss";
 @import "../utils/animation.scss";
+
+
+
+    .header-boutton{
+        display: flex;
+        position: absolute;
+        left: 1.25rem;
+        top: 2rem;
+
+    }
+    .header-boutton i{
+        display: flex;
+        top: 50%;
+    }
+
+
+
 img{
     width: 100%;
     height: 60vh;
