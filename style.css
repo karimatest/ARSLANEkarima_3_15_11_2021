@@ -63,7 +63,7 @@ h1 {
   box-shadow: 0px 0px 15px 0px #adacac;
 }
 .réservation button:hover {
-  transform: scale(1.02);
+  transform: scale(1.05);
   opacity: 1;
 }
 @media (max-width: 900px) {
@@ -73,7 +73,7 @@ h1 {
   }
 }
 .réservation button:hover {
-  transform: scale(1.02);
+  transform: scale(1.05);
   opacity: 1;
 }
 
@@ -112,13 +112,16 @@ h1 {
   font-weight: 500;
   list-style-type: none;
   cursor: pointer;
+  font-size: 18px;
   box-shadow: 0px 0px 15px 0px #adacac;
 }
 .fonctionnement li:hover {
-  transform: scale(1.02);
+  transform: scale(1.05);
+  background-color: #f2eafb;
 }
 .fonctionnement li i.fas {
   margin-right: 15px;
+  color: #8d8d8d;
 }
 .fonctionnement li span {
   position: absolute;
@@ -404,7 +407,7 @@ img {
   width: 200px;
 }
 .menu .menu-button .button-order:hover {
-  transform: scale(1.02);
+  transform: scale(1.05);
   opacity: 1;
 }
 
