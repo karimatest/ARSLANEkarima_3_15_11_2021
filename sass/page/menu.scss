@@ -73,6 +73,7 @@ img{
          @include mixinsbox-shadow;
          margin: 20px;
          overflow: hidden;
+         cursor: pointer;
          .menu-group_card{
             display: flex;
             border-radius: 1rem;

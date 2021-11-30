@@ -19,4 +19,8 @@
         border: none;
         @include mixinslinear-gradien;
         @include mixinsbox-shadow;
+        &:hover{
+            @include mixins-zoom;
+             opacity: 1;
+          }  
 }
