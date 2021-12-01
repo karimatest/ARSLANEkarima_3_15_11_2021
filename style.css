@@ -325,7 +325,7 @@ img {
   background-color: white;
   border-radius: 1rem;
   box-shadow: 0px 0px 15px 0px #adacac;
-  margin: 20px;
+  margin: 22px;
   overflow: hidden;
   cursor: pointer;
 }
@@ -334,7 +334,7 @@ img {
   border-radius: 1rem;
 }
 .menu-group .menu-group_list .menu-group_card .menu-group_description {
-  padding: 1rem;
+  padding: 1.5rem;
   overflow: hidden;
 }
 .menu-group .menu-group_list .menu-group_card .menu-group_description h4 {
