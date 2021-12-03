@@ -87,13 +87,44 @@ img{
          margin: 22px;
          overflow: hidden;
          cursor: pointer;
+         animation: see 0.5s;
+         &.case-1{
+             animation-delay: 100ms;
+         }
+         &.case-2{
+             animation-delay: 200ms;
+         }
+         &.case-3{
+             animation-delay: 300ms;
+         }
+         &.case-4{
+             animation-delay:400ms ;
+         }
+         &.case-5{
+             animation-delay: 500ms;
+         }
+         &.case-6{
+             animation-delay: 600ms;
+         }
+         &.case-7{
+             animation-delay: 700ms;
+         }
+         &.case-8{
+             animation-delay: 800ms;
+         }
+         &.case-9{
+             animation-delay: 900ms;
+         }
+         &.case-10{
+             animation-delay: 1000ms;
+         }
          .menu-group_card{
-            display: flex;
-            border-radius: 1rem;
-            .menu-group_description{
-             padding: 1.5rem;  
-             overflow: hidden;
+             display: flex;
+             border-radius: 1rem;
 
+             .menu-group_description{
+                 padding: 1.5rem;  
+                 overflow: hidden;
             h4{
               margin: 0rem;
               font-weight: 500;
