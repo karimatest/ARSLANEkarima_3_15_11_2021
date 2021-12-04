@@ -2,6 +2,7 @@
 @import "../utils/mixins.scss";
 @import "../utils/mixins.scss";
 @import "../utils/color.scss";
+@import "../utils/animation.scss";
 .réservation {
     text-align: center;
     padding: 20px 30px;
@@ -20,4 +21,38 @@
        @include mixins-zoom;
         opacity: 1;
      } 
+}
+.spinner{
+   position: fixed;
+   height: 100vh;
+   top: 0;
+   bottom: 0;
+   right: 0;
+   left: 0;
+   background-color: white;
+   opacity: 0.9;
+   z-index: 2;
+   animation: despinner 3s;
+   animation-fill-mode: forwards;
+}
+.spinner-border{
+   border: 10px solid transparent;
+   border-top: 10px solid $purpel;
+   border-bottom: 10px solid #FF79DA;
+   border-radius: 50%;
+   width: 100px;
+   height: 100px;
+   margin: auto;
+   position: fixed;
+   inset: 0;
+   display: grid;
+   place-items: center;
+   animation: spinner 2s linear;
+   animation-fill-mode: forwards;
+}
+.spinner-centre{
+   width: 15px;
+   height: 15px;
+   background-color: $tertiary;
+   border-radius: 50%;
 }

@@ -34,9 +34,17 @@
         cursor: pointer;
         font-size: 18px;
         @include mixinsbox-shadow;
+        @media (max-width:500px) {
+            width: auto;
+            height: auto;
+            font-size: 15px;
+        }
        &:hover{
         @include mixins-zoom;
-        background-color:#f2eafb; 
+        background-color:#f2eafb;
+         & i.fas{
+             color: $purpel;
+         } 
        } 
        & i.fas{
            margin-right: 15px;

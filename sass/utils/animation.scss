@@ -18,3 +18,24 @@
       opacity: 1;
   }
 }
+@keyframes despinner {
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(0);
+        visibility: hidden;
+    }
+}
+
+@keyframes spinner {
+  0%{
+      transform: rotate(0);
+      visibility: visible;
+  }  
+  100%{
+      transform: rotate(360deg);
+      visibility: hidden;
+      opacity: 0;
+  }
+}
