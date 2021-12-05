@@ -4,7 +4,8 @@
   "description": "Mon projet openclassrooms 3 ohmyfood",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./main.scss:./style.css"
+    "sass": "sass --watch ./main.scss:./style.css",
+    "prefix": "postcss style.css  -u autoprefixer -o ./prefix/style.min.css"
   },
   "repository": {
     "type": "git",
@@ -20,5 +21,10 @@
     "-": "^0.0.1",
     "g": "^2.0.1",
     "sass": "^1.43.4"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.4.4",
+    "postcss-cli": "^9.0.2"
   }
 }
