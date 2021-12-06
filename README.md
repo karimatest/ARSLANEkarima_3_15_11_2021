@@ -1,8 +1,9 @@
 ---
-#OhMyFood
-Troisième projet du parcours "Développeur-web" d'open classerooms.
-L'objectif de ce projet est de dynamiser une page web avec des animations CSS
-
+# OhMyFood
+---
+Troisième projet du parcours "Dèveloppeur-web"d'openclassrooms.
+L'objectif de ce projet est de dynamiser une page web avec les animations CSS.
+Maquette de Ohmyfood
 Cahier des charges
 L'intégration doit se faire uniquement en HTML5 et CSS3 sans JavaScript.
 Le site doit être fait sans framework, mais l'utilisation de SASS est un plus.
@@ -57,4 +58,3 @@ La convention de nommage utilisée est BEM.
 Le workflow Git utilisé est Gitflow.
 Les fichiers Sass sont morcelés pour une codebase plus organiser.
 Les iconographies utilisées viennent du site Font Awesome.
----
