@@ -53,22 +53,19 @@ h1 {
 }
 @keyframes despinner {
   0% {
-    transform: scale(1);
+    opacity: 0.9;
   }
   100% {
-    transform: scale(0);
+    opacity: 0;
     visibility: hidden;
   }
 }
 @keyframes spinner {
   0% {
     transform: rotate(0);
-    visibility: visible;
   }
   100% {
     transform: rotate(360deg);
-    visibility: hidden;
-    opacity: 0;
   }
 }
 .réservation {
@@ -104,7 +101,8 @@ h1 {
 }
 .réservation button:hover {
   transform: scale(1.02);
-  opacity: 1;
+  opacity: 0.8;
+  box-shadow: 1px 1px 8px 7p #464343;
 }
 
 .spinner {
@@ -117,7 +115,8 @@ h1 {
   background-color: white;
   opacity: 0.9;
   z-index: 2;
-  animation: despinner 3s;
+  animation: despinner 1s;
+  animation-delay: 2s;
   animation-fill-mode: forwards;
 }
 
@@ -133,7 +132,7 @@ h1 {
   inset: 0;
   display: grid;
   place-items: center;
-  animation: spinner 2s linear;
+  animation: spinner 2s linear infinite;
   animation-fill-mode: forwards;
 }
 
@@ -326,22 +325,19 @@ footer ul li {
 }
 @keyframes despinner {
   0% {
-    transform: scale(1);
+    opacity: 0.9;
   }
   100% {
-    transform: scale(0);
+    opacity: 0;
     visibility: hidden;
   }
 }
 @keyframes spinner {
   0% {
     transform: rotate(0);
-    visibility: visible;
   }
   100% {
     transform: rotate(360deg);
-    visibility: hidden;
-    opacity: 0;
   }
 }
 .header {
@@ -435,6 +431,7 @@ img {
   margin: 22px;
   overflow: hidden;
   cursor: pointer;
+  opacity: 0;
   animation: see 1s;
   animation-fill-mode: forwards;
 }
