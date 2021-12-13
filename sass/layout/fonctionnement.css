@@ -1,0 +1,64 @@
+.fonctionnement {
+  padding: 40px;
+}
+@media (max-width: 600px) {
+  .fonctionnement {
+    padding: 0 1rem;
+  }
+}
+.fonctionnement h2 {
+  margin-bottom: 30px;
+}
+.fonctionnement ol {
+  display: flex;
+  gap: 30px;
+}
+@media (max-width: 900px) {
+  .fonctionnement ol {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 0%;
+  }
+}
+.fonctionnement li {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: #f6f6f6;
+  padding: 22px 32px;
+  width: 100%;
+  flex-grow: 1;
+  border-radius: 16px;
+  font-weight: 500;
+  list-style-type: none;
+  cursor: pointer;
+  font-size: 18px;
+  box-shadow: 0px 0px 15px 0px #adacac;
+}
+@media (max-width: 500px) {
+  .fonctionnement li {
+    width: auto;
+    height: auto;
+    font-size: 15px;
+  }
+}
+.fonctionnement li:hover {
+  transform: scale(1.02);
+  background-color: #f2eafb;
+}
+.fonctionnement li:hover i.fas {
+  color: #9356dc;
+}
+.fonctionnement li i.fas {
+  margin-right: 15px;
+  color: #8d8d8d;
+}
+.fonctionnement li span {
+  position: absolute;
+  padding: 3px 8px 3px 8px;
+  background-color: #9356dc;
+  color: white;
+  border-radius: 50%;
+  left: -10px;
+}/*# sourceMappingURL=fonctionnement.css.map */

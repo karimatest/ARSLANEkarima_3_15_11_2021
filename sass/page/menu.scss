@@ -33,6 +33,7 @@ img{
     & h2{
     font-family: "shrikhand",sans-serif;
     padding: 10px 30px;
+    cursor: pointer;
 }
     i{
     font-size: 30px;
@@ -48,8 +49,9 @@ img{
    opacity: 0;
    transition: all 200ms;
    @include mixinslinear-gradien;
+   cursor: pointer;
 }
-    &:hover .fas{
+   .fas:hover{
     opacity: 1;
     transform: scale(1.2);
 }

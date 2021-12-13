@@ -1,0 +1,134 @@
+@charset "UTF-8";
+@-webkit-keyframes see {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes see {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes despinner {
+  0% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@keyframes despinner {
+  0% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes spinner {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spinner {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.réservation {
+  text-align: center;
+  padding: 20px 30px;
+  background-color: #f6f6f6;
+}
+.réservation p {
+  padding: 20px;
+}
+.réservation button {
+  width: 250px;
+  height: 60px;
+  font-size: 17px;
+  padding: 15px 20px;
+  border-radius: 32px;
+  cursor: pointer;
+  color: white;
+  font-weight: 400;
+  border: none;
+  background-image: linear-gradient(#ff79da, #9356dc);
+  box-shadow: 0px 0px 15px 0px #adacac;
+}
+.réservation button:hover {
+  transform: scale(1.02);
+  opacity: 1;
+}
+@media (max-width: 900px) {
+  .réservation button {
+    text-align: center;
+    width: 100%;
+  }
+}
+.réservation button:hover {
+  transform: scale(1.02);
+  opacity: 0.8;
+  box-shadow: 1px 1px 8px 7px #464343;
+}
+
+.spinner {
+  position: fixed;
+  height: 100vh;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: white;
+  opacity: 0.9;
+  z-index: 2;
+  -webkit-animation: despinner 1s;
+          animation: despinner 1s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.spinner-border {
+  border: 10px solid transparent;
+  border-top: 10px solid #9356dc;
+  border-bottom: 10px solid #FF79DA;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  position: fixed;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  -webkit-animation: spinner 2s linear infinite;
+          animation: spinner 2s linear infinite;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.spinner-centre {
+  width: 15px;
+  height: 15px;
+  background-color: #99e2d0;
+  border-radius: 50%;
+}/*# sourceMappingURL=réservation.css.map */

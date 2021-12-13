@@ -1,0 +1,11 @@
+.localisation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e2dfdf;
+  height: 80px;
+  gap: 15px;
+}
+.localisation i {
+  font-size: 30px;
+}/*# sourceMappingURL=localisation.css.map */

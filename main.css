@@ -41,6 +41,17 @@ h1 {
   font-size: 30px;
 }
 
+@-webkit-keyframes see {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 @keyframes see {
   0% {
     transform: translateY(50%);
@@ -51,6 +62,15 @@ h1 {
     opacity: 1;
   }
 }
+@-webkit-keyframes despinner {
+  0% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
 @keyframes despinner {
   0% {
     opacity: 0.9;
@@ -58,6 +78,14 @@ h1 {
   100% {
     opacity: 0;
     visibility: hidden;
+  }
+}
+@-webkit-keyframes spinner {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
 @keyframes spinner {
@@ -115,9 +143,12 @@ h1 {
   background-color: white;
   opacity: 0.9;
   z-index: 2;
-  animation: despinner 1s;
-  animation-delay: 2s;
-  animation-fill-mode: forwards;
+  -webkit-animation: despinner 1s;
+          animation: despinner 1s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .spinner-border {
@@ -132,8 +163,10 @@ h1 {
   inset: 0;
   display: grid;
   place-items: center;
-  animation: spinner 2s linear infinite;
-  animation-fill-mode: forwards;
+  -webkit-animation: spinner 2s linear infinite;
+          animation: spinner 2s linear infinite;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .spinner-centre {
@@ -238,7 +271,8 @@ h1 {
 .restaurants .cards .cards_list .cards_img {
   width: 100%;
   height: 250px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 1rem 1rem 0 0;
   display: block;
 }
@@ -252,9 +286,7 @@ h1 {
   color: #00664d;
 }
 .restaurants .cards .cards_description {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  position: relative;
   padding: 16px;
 }
 .restaurants .cards .cards_description h3, .restaurants .cards .cards_description p {
@@ -262,29 +294,23 @@ h1 {
 }
 .restaurants .cards .cards_description .heart {
   position: relative;
-  padding: 4px;
-  width: 67px;
-  height: 65px;
 }
-.restaurants .cards .cards_description .heart_icon-unchekend {
+.restaurants .cards .cards_description .heart_icon {
   font-size: 30px;
   position: absolute;
-  right: 14px;
+  right: 23px;
+  top: 24px;
   padding: 5px;
 }
-.restaurants .cards .cards_description .heart_icon-chekend {
+.restaurants .cards .cards_description .heart_icon {
   color: transparent;
-  font-size: 31px;
-  position: absolute;
-  right: 19px;
-  top: 7px;
   background-clip: text;
   -webkit-background-clip: text;
   opacity: 0;
   transition: all 200ms;
   background-image: linear-gradient(#ff79da, #9356dc);
 }
-.restaurants .cards .heart_icon-chekend:hover {
+.restaurants .cards .cards_description:hover .heart_icon {
   opacity: 1;
   transform: scale(1.2);
 }
@@ -367,7 +393,8 @@ footer ul li {
 img {
   width: 100%;
   height: 60vh;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   display: block;
 }
 
@@ -386,7 +413,6 @@ img {
 .menu .menu-header h2 {
   font-family: "shrikhand", sans-serif;
   padding: 10px 30px;
-  cursor: pointer;
 }
 .menu .menu-header i {
   font-size: 30px;
@@ -402,9 +428,8 @@ img {
   opacity: 0;
   transition: all 200ms;
   background-image: linear-gradient(#ff79da, #9356dc);
-  cursor: pointer;
 }
-.menu .menu-header .fas:hover {
+.menu .menu-header:hover .fas {
   opacity: 1;
   transform: scale(1.2);
 }
@@ -445,38 +470,50 @@ img {
   overflow: hidden;
   cursor: pointer;
   opacity: 0;
-  animation: see 1s;
-  animation-fill-mode: forwards;
+  -webkit-animation: see 1s;
+          animation: see 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 .menu-group .menu-group_list.case-1 {
-  animation-delay: 100ms;
+  -webkit-animation-delay: 100ms;
+          animation-delay: 100ms;
 }
 .menu-group .menu-group_list.case-2 {
-  animation-delay: 200ms;
+  -webkit-animation-delay: 200ms;
+          animation-delay: 200ms;
 }
 .menu-group .menu-group_list.case-3 {
-  animation-delay: 300ms;
+  -webkit-animation-delay: 300ms;
+          animation-delay: 300ms;
 }
 .menu-group .menu-group_list.case-4 {
-  animation-delay: 400ms;
+  -webkit-animation-delay: 400ms;
+          animation-delay: 400ms;
 }
 .menu-group .menu-group_list.case-5 {
-  animation-delay: 500ms;
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
 }
 .menu-group .menu-group_list.case-6 {
-  animation-delay: 600ms;
+  -webkit-animation-delay: 600ms;
+          animation-delay: 600ms;
 }
 .menu-group .menu-group_list.case-7 {
-  animation-delay: 700ms;
+  -webkit-animation-delay: 700ms;
+          animation-delay: 700ms;
 }
 .menu-group .menu-group_list.case-8 {
-  animation-delay: 800ms;
+  -webkit-animation-delay: 800ms;
+          animation-delay: 800ms;
 }
 .menu-group .menu-group_list.case-9 {
-  animation-delay: 900ms;
+  -webkit-animation-delay: 900ms;
+          animation-delay: 900ms;
 }
 .menu-group .menu-group_list.case-10 {
-  animation-delay: 1000ms;
+  -webkit-animation-delay: 1000ms;
+          animation-delay: 1000ms;
 }
 .menu-group .menu-group_list .menu-group_card {
   display: flex;
@@ -525,7 +562,16 @@ img {
   margin-right: 0;
 }
 .menu-group .menu-group_list .menu-group_card:hover i {
-  animation: 0.5s ease-in-out quartdetour;
+  -webkit-animation: 0.5s ease-in-out quartdetour;
+          animation: 0.5s ease-in-out quartdetour;
+}
+@-webkit-keyframes quartdetour {
+  0% {
+    transform: rotate(-270deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 @keyframes quartdetour {
   0% {
@@ -559,6 +605,4 @@ img {
 .menu .menu-button .button-order:hover {
   transform: scale(1.02);
   opacity: 1;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=main.css.map */
